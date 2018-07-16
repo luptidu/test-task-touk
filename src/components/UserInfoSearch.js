@@ -24,7 +24,7 @@ class UserInfoSearch extends React.Component {
                 getRepos(searchValue)
             ]);
 
-            return this.setState({ userInfo: { user, repos } });
+            this.setState({ userInfo: { user, repos } });
         } catch (error) {
             alert(error);
         }
